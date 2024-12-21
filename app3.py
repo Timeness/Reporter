@@ -5,7 +5,7 @@ from telethon.sessions import StringSession
 BOT_TOKEN = "7561524299:AAFjfBmLNx0R9-5IZaN2tz2iJlQK1z3WXlU"
 STRING_SESSION = "AnfYAnt-WVQvroUn0-pEjn041pn9DNTTDZY9_B4X4cyqEgyNDtAoefZtFQAmqYNZexBvG-dkfK71paP3-Zgsnof3QVtnylzASm9nKQXT1AgRvqH71Sh6QQZla75wfhgR1zN4W0SZ0177z965cOOtPDDWrhLQsxqb_bolNeyMLkvyOJ1QM4X9YdsC2Uapcxp1098E-6N36xQolR2Q1Ca5VRpFFKL05ocvgEKl7qg07y-8kjOsZo95ScqQaw8Odiyugup6p8Ah3Y4flDWsoR61ewsLa35HmkyzGoRRriF2-mMOvEgC867e-emRBG0dO3u1C1xfwBKcDxgQeFMnxH_n2pY_MGQAAAAGlMTQvAA"
 
-userbot_client = TelegramClient(StringSession(STRING_SESSION), api_id="YOUR_API_ID", api_hash="YOUR_API_HASH")
+userbot_client = TelegramClient(StringSession(STRING_SESSION), api_id="29400566", api_hash="8fd30dc496aea7c14cf675f59b74ec6f")
 userbot_connected = True  # Directly set to True as the userbot is connected via string session
 is_reporting = False
 target_user = None
