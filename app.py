@@ -2,18 +2,15 @@ import asyncio
 from telethon import TelegramClient, events, functions, types
 from telethon.sessions import StringSession
 
-# Bot API Token (replace with your bot token)
-BOT_TOKEN = "YOUR_BOT_API_TOKEN"
+BOT_TOKEN = "7561524299:AAFjfBmLNx0R9-5IZaN2tz2iJlQK1z3WXlU"
 
-# Variables for managing state
 userbot_client = None
 userbot_connected = False
 is_reporting = False
 target_user = None
 report_reason = None
 
-# Bot Client Initialization
-bot = TelegramClient("reporter_bot", api_id="YOUR_API_ID", api_hash="YOUR_API_HASH").start(bot_token=BOT_TOKEN)
+bot = TelegramClient("reporter_bot", api_id="26850449", api_hash="72a730c380e68095a8549ad7341b0608").start(bot_token=BOT_TOKEN)
 
 
 @bot.on(events.NewMessage(pattern="/start"))
