@@ -10,7 +10,7 @@ is_reporting = False
 target_user = None
 report_reason = None
 
-bot = TelegramClient("reporter_bot", api_id="26850449", api_hash="72a730c380e68095a8549ad7341b0608").start(bot_token=BOT_TOKEN)
+bot = TelegramClient("reporter_bot", api_id="29400566", api_hash="8fd30dc496aea7c14cf675f59b74ec6f").start(bot_token=BOT_TOKEN)
 
 
 @bot.on(events.NewMessage(pattern="/start"))
