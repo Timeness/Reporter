@@ -43,7 +43,7 @@ async def report_start(client, message):
     global target_user
     await message.reply("Kindly enter the username or chat ID of the target:")
 
-    @app.on_message(filters.chat(message.chat.id) & ~filters.command)
+    @app.on_message(filters.chat(message.chat.id))
     async def handle_target(client, target_message):
         global target_user
         target_user = target_message.text
