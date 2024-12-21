@@ -67,7 +67,7 @@ async def report_start(client, message):
                 "[6] Copyright\n[7] Fake Account\n[8] Geo Irrelevant\n[9] Illegal Drugs\n[10] Personal Details"
             )
 
-            @app.on_message(filters.chat(target_message.chat.id) & ~filters.command)
+            @app.on_message(filters.chat(target_message.chat.id))
             async def handle_reason(client, reason_message):
                 global report_reason
                 try:
@@ -115,7 +115,8 @@ async def send_reports(message):
         await message.reply(f"❌ **Error during reporting:** {e}")
 
 # Run the bot
+
+userbot.start()
+print("Userbot also started running...")
 print("🤖 Reporter Bot is running...")
 app.run()
-userbot.run()
-print("Userbot also started running...")
